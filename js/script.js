@@ -1,7 +1,7 @@
 // grab hamburger menu button
-const mobileHamburger = document.querySelector('.nav-hamburger-mobile');
+const mobileHamburger = document.querySelector('.nav-hamburger');
 // grab mobile nav slide in
-const mobileMenu = document.querySelector('.nav-menu-mobile');
+const mobileMenu = document.querySelector('.mobile-menu');
 
 mobileHamburger.addEventListener('click', function(e){
   e.preventDefault();
