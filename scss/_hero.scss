@@ -1,0 +1,13 @@
+@use './root' as r;
+
+.hero{
+  color: white;
+}
+
+.left-hero{
+  background-color: r.$bg-gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}

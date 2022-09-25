@@ -108,6 +108,18 @@ nav {
     align-self: center;
   }
 }
+.hero {
+  color: white;
+}
+
+.left-hero {
+  background-color: #2D2D2D;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
