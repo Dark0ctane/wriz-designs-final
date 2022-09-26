@@ -1,5 +1,9 @@
 @use './root' as r;
 
+.top-section{
+  height: 100vh;
+}
+
 @media screen and (min-width:0px){
   .container{
     margin: 0px 30px;
@@ -23,7 +27,7 @@
 
   .header-lg{
     font-family: 'Roboto', sans-serif;
-    font-size: 75px;
+    font-size: 55px;
     font-weight: 900;
     font-style: italic;
   }
