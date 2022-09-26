@@ -53,3 +53,31 @@
     font-size: 75px;
   }
 }
+
+.section-sm-header, .section-sub-header, .services-card-info{
+  font-family: 'Oswald', sans-serif;
+}
+
+.section-sub-header{
+  font-size: 20px;
+  color: r.$primary;
+}
+
+.section-sm-header{
+  font-size: 32px;
+}
+
+.card-main-text{
+  font-size: 25px;
+  color: r.$gray;
+}
+
+.card-starting-at{
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.services-price{
+  font-size: 25px;
+  font-weight: bold;
+}

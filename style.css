@@ -47,6 +47,34 @@
     font-size: 75px;
   }
 }
+.section-sm-header, .section-sub-header, .services-card-info {
+  font-family: "Oswald", sans-serif;
+}
+
+.section-sub-header {
+  font-size: 20px;
+  color: #BF1E2E;
+}
+
+.section-sm-header {
+  font-size: 32px;
+}
+
+.card-main-text {
+  font-size: 25px;
+  color: #878787;
+}
+
+.card-starting-at {
+  font-size: 13px;
+  font-weight: lighter;
+}
+
+.services-price {
+  font-size: 25px;
+  font-weight: bold;
+}
+
 nav {
   width: 100%;
   background-color: black;
@@ -253,6 +281,76 @@ nav {
     text-align: left;
   }
 }
+.services {
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+.services-graphics-bot-left, .services-graphics-top-right {
+  position: absolute;
+  display: none;
+}
+
+.services-graphics-bot-left {
+  bottom: 0;
+  left: 0;
+}
+
+.services-graphics-top-right {
+  top: 0;
+  right: 0;
+}
+
+.services-area {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-card-lg, .services-card-sm {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 3px;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1/1;
+}
+
+.services-card-lg {
+  background-image: url("../img/swiper-img/Photo Mar 04, 4 58 57 PM.jpg");
+}
+
+.services-card-sm.logos {
+  background-image: url("../img/logos-section-img/Photo Jul 27, 12 35 54 PM.jpg");
+}
+
+.services-card-sm.number-plates {
+  background-image: url("../img/swiper-img/Photo Feb 13, 9 57 49 PM (2).jpg");
+}
+
+.services-card-info {
+  background-color: white;
+  color: black;
+  padding: 25px;
+  border-radius: 25px 0px 3px 0px;
+}
+
+.services-card-info-top-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.services-card-info-top-section .arrow-box {
+  display: none;
+  opacity: 0;
+}
+.services-card-info-top-section .arrow-box:hover {
+  border-top: 1px solid black;
+  height: 50%;
+  width: 100%;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
