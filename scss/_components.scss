@@ -38,3 +38,10 @@
     font-weight: bold;
   }
 }
+
+@media screen and (min-width:1000px) {
+  .top-section{
+    display: flex;
+    flex-direction: column;
+  }
+}
