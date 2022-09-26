@@ -38,7 +38,7 @@ nav {
   position: absolute;
   background-color: black;
   color: white;
-  right: 0;
+  right: -1px;
   margin-top: 25px;
   padding: 25px;
   border-radius: 0px 0px 0px 8px;
@@ -114,10 +114,23 @@ nav {
 
 .left-hero {
   background-color: #2D2D2D;
+  padding: 25px 0px;
+}
+
+.left-hero-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+  width: 100vw;
+}
+.left-hero-container .left-hero-container-right-graphic {
+  position: absolute;
+  transform: rotate(90deg);
+  z-index: 2;
+  transform-origin: bottom;
 }
 
 /*

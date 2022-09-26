@@ -6,8 +6,22 @@
 
 .left-hero{
   background-color: r.$bg-gray;
+  padding: r.$padding-link 0px;
+}
+
+.left-hero-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 10px;
+  gap: 20px;
+  align-items: flex-start;
+  position: relative;
+  width: 100vw;
+  
+  .left-hero-container-right-graphic{
+    position: absolute;
+    transform: rotate(90deg);
+    z-index: 2;
+    transform-origin: bottom;
+  }
 }
