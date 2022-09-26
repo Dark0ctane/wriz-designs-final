@@ -6,7 +6,18 @@
 
 .left-hero{
   background-color: r.$bg-gray;
-  padding: r.$padding-link 0px;
+  padding: r.$padding-link 0px 20%;
+  position: relative;
+}
+
+.left-hero-bottom-graphics{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.left-hero-right-graphics{
+  display: none;
 }
 
 .left-hero-container{
@@ -15,13 +26,42 @@
   justify-content: space-between;
   gap: 20px;
   align-items: flex-start;
-  position: relative;
-  width: 100vw;
-  
-  .left-hero-container-right-graphic{
+}
+
+.swiper-slide{
+  height: auto;
+
+  img{
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width:700px) {
+  .hero{
+    display: flex;
+  }
+
+  .left-hero, .right-hero{
+    width: 50%;
+  }
+
+  .swiper-slide{
+
+    img{
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .left-hero-right-graphics{
+    display: block;
     position: absolute;
-    transform: rotate(90deg);
+    right: 2px;
+    top: 0;
+    height: 100%;
+    transform:translateX(100%);
     z-index: 2;
-    transform-origin: bottom;
   }
 }

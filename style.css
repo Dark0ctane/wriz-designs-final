@@ -114,7 +114,18 @@ nav {
 
 .left-hero {
   background-color: #2D2D2D;
-  padding: 25px 0px;
+  padding: 25px 0px 20%;
+  position: relative;
+}
+
+.left-hero-bottom-graphics {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.left-hero-right-graphics {
+  display: none;
 }
 
 .left-hero-container {
@@ -123,16 +134,38 @@ nav {
   justify-content: space-between;
   gap: 20px;
   align-items: flex-start;
-  position: relative;
-  width: 100vw;
-}
-.left-hero-container .left-hero-container-right-graphic {
-  position: absolute;
-  transform: rotate(90deg);
-  z-index: 2;
-  transform-origin: bottom;
 }
 
+.swiper-slide {
+  height: auto;
+}
+.swiper-slide img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    display: flex;
+  }
+  .left-hero, .right-hero {
+    width: 50%;
+  }
+  .swiper-slide img {
+    width: auto;
+    height: 100%;
+  }
+  .left-hero-right-graphics {
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 0;
+    height: 100%;
+    transform: translateX(100%);
+    z-index: 2;
+  }
+}
 /*
   1. Use a more-intuitive box-sizing model.
 */
