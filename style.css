@@ -449,6 +449,11 @@ footer .footer-header {
   padding: 47px 0px;
 }
 
+.sell-area {
+  background-color: #1a1a1a;
+  color: white;
+}
+
 /*
   1. Use a more-intuitive box-sizing model.
 */
