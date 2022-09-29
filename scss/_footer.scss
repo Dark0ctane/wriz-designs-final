@@ -1,0 +1,70 @@
+@use './root' as r;
+
+footer{
+  display: flex;
+  width: 100%;
+
+  .footer-container{
+    width: 100%;
+  }
+
+  .footer-left, .footer-right{
+    padding: 47px 0px;
+  }
+
+  .footer-left{
+    background-color: r.$bg-gray;
+    color: white;
+
+    .footer-logo{
+      height: 35px;
+      width: auto;
+    }
+  }
+
+  .footer-right{
+    background-color: r.$gray;
+    color: white;
+
+    .footer-right-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .footer-btns{
+      gap: 10px;
+      display: flex;
+    }
+  }
+
+  .footer-header{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width:500px) {
+  footer{
+    .footer-container{
+      display: flex;
+    }
+
+    .footer-right{
+      flex-grow: 1;
+    }
+  }
+}
+
+@media screen and (min-width:650px){
+  .site-map, .social-media {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .footer-right .footer-right-container {
+    flex-direction: row;
+  }
+}

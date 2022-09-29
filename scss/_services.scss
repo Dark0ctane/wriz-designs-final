@@ -80,12 +80,34 @@
     display: none;
     opacity: 0;
 
-    &:hover{
+    .arrow-hover{
+      display: block;
       border-top: 1px solid black;
       height: 50%;
       width: 100%;
+    }
+  }
+  
+}
 
+@media (min-width:1000px) {
+  .services-area-left {
+    width: 50%;
+  }
+
+  .services-area-right {
+    width: 50%;
+  }
+
+  .services-card-sm {
+    aspect-ratio: 2/1;
+  }
+
+  .services-area {
+    flex-direction: row;
+    .services-card-lg {
+      height: 100%;
+      width: 100%;
     }
   }
 }
-

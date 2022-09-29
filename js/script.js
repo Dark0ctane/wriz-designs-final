@@ -22,5 +22,37 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+// Swiper
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
 // services card transition
+const servicesCardInfo = document.getElementsByClassName('services-card-info');
+const arrow = document.getElementsByClassName('arrow-box');
+
+for (var i=0; i<servicesCardInfo.length; i++){
+  servicesCardInfo[i].addEventListener('mouseenter', function(e){
+    e.preventDefault();
+
+    console.log(arrow[i]);
+  })
+  
+  servicesCardInfo[i].addEventListener('mouseleave', function(e){
+    e.preventDefault();
+    arrow[i].className.remove('arrow-hover');
+  })
+}
+
