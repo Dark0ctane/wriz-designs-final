@@ -98,7 +98,7 @@ nav {
   background-color: black;
   color: white;
   right: -1px;
-  margin-top: 25px;
+  margin-top: 19px;
   padding: 25px;
   border-radius: 0px 0px 0px 8px;
   display: flex;
@@ -285,11 +285,16 @@ nav {
   position: relative;
   background-color: black;
   color: white;
+  padding: 132px 0px;
+}
+
+.services-container {
+  z-index: 3;
+  position: relative;
 }
 
 .services-graphics-bot-left, .services-graphics-top-right {
   position: absolute;
-  display: none;
 }
 
 .services-graphics-bot-left {
@@ -305,6 +310,12 @@ nav {
 .services-area {
   display: flex;
   flex-direction: column;
+  gap: 25px;
+  padding-top: 65px;
+}
+
+.services-area-right .logos {
+  margin-bottom: 25px;
 }
 
 .services-card-lg, .services-card-sm {

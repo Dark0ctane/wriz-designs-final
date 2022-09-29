@@ -4,11 +4,16 @@
   position: relative;
   background-color: black;
   color: white;
+  padding: 132px 0px;
+}
+
+.services-container{
+  z-index: 3;
+  position: relative;
 }
 
 .services-graphics-bot-left, .services-graphics-top-right{
   position: absolute;
-  display: none;
 }
 
 .services-graphics-bot-left{
@@ -26,6 +31,14 @@
 .services-area{
   display: flex;
   flex-direction: column;
+  gap: r.$padding-link;
+  padding-top: r.$padding-lg;
+}
+
+.services-area-right{
+  .logos{
+    margin-bottom: r.$padding-link;
+  }
 }
 
 .services-card-lg, .services-card-sm{
