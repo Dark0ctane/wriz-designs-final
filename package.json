@@ -11,5 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "swiper": "^8.4.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
   }
 }
