@@ -539,6 +539,7 @@ footer .footer-header {
   z-index: 2;
   background-color: #BF1E2E;
   background: linear-gradient(#BF1E2E, #94212D);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -563,6 +564,7 @@ footer .footer-header {
 .price-card .price-card-left .price-card-header {
   background-color: #BF1E2E;
   background: linear-gradient(#BF1E2E, #94212D);
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
