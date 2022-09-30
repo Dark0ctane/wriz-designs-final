@@ -38,6 +38,15 @@ var swiper = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev",
   },
 });
+// Swiper
+var swiper = new Swiper(".mySwiper3", {
+  slidesPerView: 6,
+  spaceBetween: 5,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
 
 // services card transition
 const servicesCardInfo = document.getElementsByClassName('services-card-info');

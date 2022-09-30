@@ -113,3 +113,18 @@
   font-weight: 900;
   font-style: italic;
 }
+
+.merch-item{
+  height: 250px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  
+  .merch-item-container{
+    background-color: r.$gray;
+    padding: 10px;
+  }
+}
+
+.current{
+  color: red;
+}
