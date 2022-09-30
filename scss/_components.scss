@@ -1,5 +1,14 @@
 @use './root' as r;
 
+.mask{
+  background-color: rgba(0, 0, 0, 0.66);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
 .top-section{
   height: 100vh;
 }
@@ -8,7 +17,7 @@
   margin: 0px 30px;
 
   @media(min-width:1000px) {
-    margin: 0px 99px;
+    margin: 0px 375px;
   }
 }
 @media screen and (min-width:0px){
@@ -50,7 +59,7 @@
   }
 
   .header-lg{
-    font-size: 75px;
+    font-size: 105px;
   }
 }
 
@@ -80,4 +89,27 @@
 .services-price{
   font-size: 25px;
   font-weight: bold;
+}
+
+.sell-area{
+  font-family: 'Roboto', sans-serif;
+}
+
+.price-card-header{
+  font-size: 44px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.price-card-sub-header{
+  font-size: 17px;
+  font-weight: 900;
+  font-style: italic;
+  color: r.$gray;
+}
+
+.price-card-price{
+  font-size: 55px;
+  font-weight: 900;
+  font-style: italic;
 }
